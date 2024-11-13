@@ -9,6 +9,14 @@
     --foreground: #ededed;
   }
 } */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: var(--black);
+  color: inherit;
+}
+
 
 body {
   color: var(--foreground);

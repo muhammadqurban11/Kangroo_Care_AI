@@ -1,4 +1,4 @@
-import { extendTheme, type Theme,  TypographyProps } from '@chakra-ui/react'
+import { extendTheme, type Theme, TypographyProps } from '@chakra-ui/react'
 import { Raleway, Alice } from 'next/font/google';
 
 
@@ -13,6 +13,13 @@ const colors = {
         maroon3: "#3C061F",
         yellow1: "#fac113",
         yellow2: "#d09e02",
+        blue: "286AA3",
+        white: "#FBEFDD",
+
+    },
+    white: {
+        500: '#FBEFDD',
+
     },
     maroon: {
         // 100: '#fac113',
@@ -26,6 +33,10 @@ const colors = {
         // 900: '#fac113',
         // 1000: '#fac113',
     },
+    blue: {
+        600: '#286AA3',
+
+    },
     grey: {
         500: '#E0E0E0', // main color
         600: '#C0C0C0', // hover color
@@ -38,17 +49,16 @@ const colors = {
     }
 }
 
-const components: Partial<Theme['components']> & { Text?: any } = {
+const components = {
     // Heading: {
     //     baseStyle: { fontWeight: "200", }
     // } as any,
     Text: {
-        baseStyle: { textAlign: 'justify', fontWeight: "600", fontSize: { base: 'md', lg: 'lg' } }
+        baseStyle: { textAlign: 'justify', fontSize: { base: 'md', lg: 'lg' } }
     },
-    // @ts-ignore
     Input: {
-        baseStyle: { field: { fontFamily: 'sans-serif' } as any } as any
-    },
+        baseStyle: { field: { fontFamily: 'sans-serif' } }
+    }
     // Button: {
     // sizes: {
     //     lg: { fontSize: "16px", h: "50px", minW: "182px", p: "16px 30px 14px" },
@@ -59,6 +69,7 @@ const components: Partial<Theme['components']> & { Text?: any } = {
     // }
 
 }
+
 
 // https://chakra-ui.com/docs/styled-system/text-and-layer-styles
 const textStyles: { [k: string]: TypographyProps } = {
@@ -76,7 +87,7 @@ export const breakpoints = {
 
 const raleway = Raleway({ subsets: ['latin'], weight: ['500', '600', '700', '800', '900'], style: ['italic', 'normal'] });
 const alice = Alice({ subsets: ['latin'], weight: ['400'], });
-const fonts: Partial<Theme['fonts']> & { alice: any } = {
+const fonts: Partial<Theme['fonts']> & { alice: string } = {
     alice: alice.style.fontFamily,
     body: raleway.style.fontFamily,
     heading: raleway.style.fontFamily,

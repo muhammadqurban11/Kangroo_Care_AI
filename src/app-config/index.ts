@@ -1,7 +1,7 @@
-const Home = { title: "Home", path: "/"};
-const About = { title: "About Us", path: "/about-us"};
-const Contact = { title: "Contact Us", path: "/contact-us"};
-const Products = { title: "News", path: "/news"};
+const Home = { title: "Home", path: "/" };
+const About = { title: "About Us", path: "/about-us" };
+const Contact = { title: "Contact Us", path: "/contact-us" };
+const Products = { title: "News", path: "/news" };
 
 
 
@@ -15,7 +15,7 @@ export const FULL_NAME = `${NAME} ${CITY} (${REGION})`;
 export const SITE_TITLE = `${NAME} |  ${CITY} (${REGION})`;
 
 export const SITE_DESCRIPTION = `
- Welcome to the Kangroo Care Ai Website${NAME} ${COUNTRY} ${CITY} (${REGION})
+ Welcome to the Kangroo Care Ai ${NAME} ${COUNTRY} ${CITY} (${REGION})
 `;
 
 
