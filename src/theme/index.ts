@@ -15,38 +15,22 @@ const colors = {
         yellow2: "#d09e02",
         blue: "286AA3",
         white: "#FBEFDD",
+        halfWhite: "#F4F4F4"
 
     },
     white: {
         500: '#FBEFDD',
 
     },
-    maroon: {
-        // 100: '#fac113',
-        // 200: '#fac113',
-        // 300: '#fac113',
-        // 400: '#fac113',
-        500: '#620a34', // main color
-        600: '#54092C', // hover color
-        700: '#3C061F', // active color
-        // 800: '#fac113',
-        // 900: '#fac113',
-        // 1000: '#fac113',
+    halfwhite: {
+
     },
+
     blue: {
         600: '#286AA3',
 
     },
-    grey: {
-        500: '#E0E0E0', // main color
-        600: '#C0C0C0', // hover color
-        700: '#A0A0A0', // active color
-    },
-    yellow: {
-        400: '#fac113', // main color
-        500: '#d09e02', // hover color
-        600: '#B28902', // active color
-    }
+
 }
 
 const components = {
@@ -59,14 +43,7 @@ const components = {
     Input: {
         baseStyle: { field: { fontFamily: 'sans-serif' } }
     }
-    // Button: {
-    // sizes: {
-    //     lg: { fontSize: "16px", h: "50px", minW: "182px", p: "16px 30px 14px" },
-    //     md: { fontSize: "14px", h: "46px", minW: "162px", p: "16px 30px 14px" },
-    //     sm: { fontSize: "12px", h: "42px", minW: "154px", p: "16px 30px 14px" },
-    //     xs: { fontSize: "12px", h: "39px", minW: "115px", p: "13px 20px 12px" },
-    // } as any
-    // }
+
 
 }
 
