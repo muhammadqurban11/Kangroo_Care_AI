@@ -1,35 +1,17 @@
 import { extendTheme, type Theme, TypographyProps } from '@chakra-ui/react'
-import { Raleway, Alice } from 'next/font/google';
+import { Roboto, Righteous, Jua } from 'next/font/google';
+
 
 
 const colors = {
     app: {
-        black: "var(--black)",
-        grey1: "#7a7a7a",
-        grey2: "#e9e9e9",
-        grey3: "#222324",
-        maroon1: "#620a34",
-        maroon2: "#54092C",
-        maroon3: "#3C061F",
-        yellow1: "#fac113",
-        yellow2: "#d09e02",
-        blue: "286AA3",
-        white: "#FBEFDD",
-        halfWhite: "#F4F4F4"
-
-    },
-    white: {
-        500: '#FBEFDD',
-
-    },
-    halfwhite: {
-
+        grey1: "#F4F4F4",
+        grey2: "#C2BEBE",
+        grey3: "#444343",
+        primary: "#286AA3",// blue
+        secondary: "#F4F4F4", // half-white
     },
 
-    blue: {
-        600: '#286AA3',
-
-    },
 
 }
 
@@ -40,9 +22,9 @@ const components = {
     Text: {
         baseStyle: { textAlign: 'justify', fontSize: { base: 'md', lg: 'lg' } }
     },
-    Input: {
-        baseStyle: { field: { fontFamily: 'sans-serif' } }
-    }
+    // Input: {
+    //     baseStyle: { field: { fontFamily: 'sans-serif' } }
+    // }
 
 
 }
@@ -61,14 +43,15 @@ export const breakpoints = {
     xl: "1024px",
     "2xl": "1440px",
 }
+const righteous = Righteous({ subsets: ['latin'], weight: ['400'], style: ['normal'] })
+const jua = Jua({ subsets: ['latin'], weight: ['400'], style: ['normal'] })
+const roboto = Roboto({ subsets: ['latin'], weight: ['100', '300', '400', '500', '700', '900'], style: ['italic', 'normal'] });
 
-const raleway = Raleway({ subsets: ['latin'], weight: ['500', '600', '700', '800', '900'], style: ['italic', 'normal'] });
-const alice = Alice({ subsets: ['latin'], weight: ['400'], });
-const fonts: Partial<Theme['fonts']> & { alice: string } = {
-    alice: alice.style.fontFamily,
-    body: raleway.style.fontFamily,
-    heading: raleway.style.fontFamily,
-    mono: raleway.style.fontFamily,
+const fonts: Partial<Theme['fonts']> & { jua: string } = {
+    jua: jua.style.fontFamily,
+    body: roboto.style.fontFamily,
+    heading: righteous.style.fontFamily,
+    mono: roboto.style.fontFamily,
 }
 
 const config: Partial<Theme['config']> = {

@@ -1,11 +1,5 @@
 import type { Metadata } from "next";
-
-
 import "../theme/globals.css";
-import { ChakraProvider } from "@chakra-ui/react";
-
-
-
 import React from 'react'
 import { Box, Text, Image } from '@chakra-ui/react'
 import { FaFacebookF } from "react-icons/fa";
@@ -13,6 +7,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FiPhone } from "react-icons/fi";
 import { IoMailOutline } from "react-icons/io5";
+import RootWrapper from "@/RootWrapper";
 
 
 const logopath = '/assets/favicon.co'
@@ -29,11 +24,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <Header />
-        <ChakraProvider> {children}</ChakraProvider>
-        <Footer />
-      </body>
+      <RootWrapper>
+        <body>
+          <Header />
+          {children}
+          <Footer />
+        </body>
+      </RootWrapper>
     </html>
   );
 }
@@ -41,8 +38,8 @@ export default function RootLayout({
 
 function Header() {
   return (
-    <Box padding="10" rounded="sm" backgroundColor='#286AA3'>
-      <Box display='flex' gap='30'>
+    <Box padding="7px" rounded="sm" backgroundColor='#286AA3'>
+      <Box display='flex' gap='20px' mt='2px'>
         <FaFacebookF color='#FBEFDD' />
         <FaInstagram color='#FBEFDD' />
         <FaLinkedinIn color='#FBEFDD' />
@@ -60,15 +57,12 @@ function Header() {
 
 function Footer() {
   return (
-    <Box padding='6' rounded='sm' backgroundColor='#444343' mt='527'>
+    <Box padding='2px' rounded='sm' backgroundColor='#444343'>
       <Box display='flex' gap='30'>
         <Text color='#FBEFDD' >Copyright &copy; {new Date().getFullYear()} kangaroocareai.com All Rights Reserved</Text>
-        {/* <Box display="flex" gap='5' ml="auto" >
-          <Text color="#FBEFDD" >Powered By : <Image src="/syntaxfit.png" alt="company_logo"></Image></Text>
-        </Box> */}
         <Box display="flex" alignItems="center" gap={2} ml="auto">
           <Text color="#FBEFDD">Powered By :</Text>
-          <Image src="/syntaxfit.png" alt="company_logo" boxSize="100px" width='20' height='20' />
+          <a href="https://syntaxfit.com/"><Image src="/syntaxfit.png" alt="company_logo" /></a>
         </Box>
       </Box>
 

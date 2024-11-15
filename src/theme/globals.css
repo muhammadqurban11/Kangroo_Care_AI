@@ -3,22 +3,7 @@
   --foreground: #171717;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
 
-@font-face {
-  font-family: 'Roboto';
-  src: url('/fonts/Roboto/Roboto-Light.ttf');
-}
-
-@font-face {
-  font-family: 'Jua';
-  src: url('/fonts/Jua-Regular.ttf');
-}
 
 * {
   box-sizing: border-box;
