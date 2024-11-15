@@ -1,5 +1,7 @@
 import { Box, Image, Text } from '@chakra-ui/react'
-// import { ImLocation } from "react-icons/im";
+import { ImLocation } from "react-icons/im";
+import { BsFillTelephoneFill } from "react-icons/bs";
+import { GrMail } from "react-icons/gr";
 import React from 'react'
 
 
@@ -25,15 +27,41 @@ function Home() {
                     </Text>
                 </Box>
             </Box>
-            {/* <Box position='relative' bg='#F4F4F4'>
-                <Text><Image src='/image 4.png' alt="Footer_Image" ml='20px' position="absolute" top='50%' left='1%' paddingTop='100px' width='396px' /></Text>
-                <Box display="inline-block" textAlign="center" paddingLeft="30px" position='absolute' mt='250px'>
-                    <ImLocation fontSize='30px' />
+            <Box position="relative" width="100%" bg="#F4F4F4" padding="35px">
+                <Box display="flex" justifyContent="space-between" alignItems="center" maxWidth="1200px" px="20px">
+                    <Image src='/image 4.png' alt="Footer_Image" width="300px" height="auto" />
+                    <Box display="flex" position='absolute' left='3%' top='95%'>
+                        <ImLocation fontSize="25px" />
+                        <Text display="flex" ml="10px" fontSize="16px" color="#555">
+                            4B, Block-2 PECHS, Karachi, Pakistan
+                        </Text>
+                    </Box>
+                    <Box display="flex" position='absolute' left='3%' top='130%'>
+                        <BsFillTelephoneFill fontSize='20' />
+                        <Text display="flex" ml="10px" fontSize="16px" color="#555">+923322842727</Text>
+                    </Box>
+                    <Box display="flex" position='absolute' left='3%' top='160%'>
+                        <GrMail fontSize='20' />
+                        <Text display="flex" ml="10px" fontSize="16px" color="#555">+mohammadlaeeq91@gmail.com</Text>
+                    </Box>
+                    <Box position="absolute" left="35%" top="20%">
+                        <Text fontFamily="Jua" color="#286AA3" fontSize="25px">Quick Links</Text>
+                    </Box>
+                    <Box position="absolute" left="35%" top="50%" display="flex" flexDirection="column" gap="7px">
+                        <Text fontSize="18px">Home</Text>
+                        <Text fontSize="18px">About</Text>
+                        <Text fontSize="18px">Products</Text>
+                        <Text fontSize="18px">Contact Us</Text>
+                        <Text fontSize="18px">Career</Text>
+                    </Box>
+                    <Box position="absolute" left="50%" top="20%">
+                        <Text fontFamily="Jua" color="#286AA3" fontSize="25px">Our Mission</Text>
+                    </Box>
+                    <Box position='absolute' left='50%' right='20%' top='48%'>
+                        <Text textAlign='justify'>At Kangaroo Care AI, our mission is to revolutionize neonatal care with AI-powered incubators that prioritize warmth, safety, and bonding. We combine advanced technology with compassionate design to support healthcare professionals and families, ensuring optimal outcomes for infants in their most critical early moments.</Text>
+                    </Box>
                 </Box>
-                <Text display='flex' mb='50px' paddingLeft='40px' top='655%'>4B, Block-2 PECHS, Karachi, Pakistan</Text>
-
-
-            </Box> */}
+            </Box>
         </div >
     )
 }
