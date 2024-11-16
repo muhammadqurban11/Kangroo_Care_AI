@@ -1,4 +1,4 @@
-import { Box, Heading, Image, Text } from '@chakra-ui/react'
+import { Box, Heading, Image, Text } from '@chakra-ui/react';
 import { ImLocation } from "react-icons/im";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { GrMail } from "react-icons/gr";
