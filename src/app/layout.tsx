@@ -24,13 +24,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <RootWrapper>
-        <body>
+      <Box as='body'>
+        <RootWrapper>
           <Header />
           {children}
           <Footer />
-        </body>
-      </RootWrapper>
+        </RootWrapper>
+      </Box>
     </html>
   );
 }
