@@ -8,12 +8,13 @@ const colors = {
         grey1: "#F4F4F4",
         grey2: "#C2BEBE",
         grey3: "#444343",
-        primary: "#286AA3",// blue
+        primary: "var(--blue1)",// blue
         secondary: "#F4F4F4", // half-white
         white: "#FBEFDD",
-
-
     },
+    blue: {
+        500: 'var(--blue1)',
+    }
 
 
 }
