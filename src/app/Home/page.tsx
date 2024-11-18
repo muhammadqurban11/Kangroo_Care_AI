@@ -13,15 +13,7 @@ function Home() {
     return (
         <Box>
             <Image src="/image 2 (1).png" alt="baby_image" objectFit="cover" width="100%" height="100%" />
-            <Box position='relative' top='-750px'>
-                <Image src="/favicon.ico" alt="Favicon_Image" position="absolute" top="4%" left='1%' width="65px" />
-                <Text fontSize='4xl' fontFamily='aap.Jua' color='app.primary' position="absolute" top='10%' left='7%' >Kangaroo Care AI</Text>
-                <Text fontSize='xl' fontFamily='app.Jua' color='app.primary' position="absolute" top='5%' right='30%' ><a href="#home">Home</a></Text>
-                <Text fontSize='xl' fontFamily='app.Jua' color='app.primary' position="absolute" top='5%' right='24%' ><a href="#about">About</a></Text>
-                <Text fontSize='xl' fontFamily='app.Jua' color='app.primary' position="absolute" top='5%' right='16%' ><a href="#products">Products</a></Text>
-                <Text fontSize='xl' fontFamily='app.Jua' color='app.primary' position="absolute" top='5%' right='7%' ><a href="#contact_us">Contact Us</a></Text>
-                <Text fontSize='xl' fontFamily='app.Jua' color='app.primary' position="absolute" top='5%' right='1%' ><a href="#career">Career</a></Text>
-            </Box>
+            
             <Box>
                 <Text fontSize='60px' fontFamily='jua' color='app.primary' position="absolute" top='18%' left='5%' right='35%'>Innovating Neonatal Care with AI-Powered Incubators</Text>
                 <Text fontSize='30px' fontFamily='roboto' color='#444343' position="absolute" top='30%' left='5%' right='35%' >At Kangaroo Care AI, we blend advanced technology with compassionate design to ensure the best start for every newborn.</Text>

@@ -8,7 +8,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import RootWrapper from "@/RootWrapper";
 import Link from "next/link";
 import { IoLogoInstagram, IoMail } from "react-icons/io5";
-import { SOCIAL_LINKS, SITE_TITLE, SITE_DESCRIPTION, CONTACT_DETAILS, DOMAIN_NAME } from "@/app-config";
+import { SOCIAL_LINKS, SITE_TITLE, QUICK_LINKS, SITE_DESCRIPTION, CONTACT_DETAILS, DOMAIN_NAME } from "@/app-config";
 import { FaPhoneAlt } from "react-icons/fa";
 import { ImLocation } from "react-icons/im";
 import { BsFillTelephoneFill } from "react-icons/bs";
@@ -40,24 +40,40 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
 
 function Header() {
   return (
-    <Flex p="2" bgColor='app.primary' justify='space-between'>
-      <Flex align='center' color='app.white' gap='20px' mt='2px'>
-        <Link href={SOCIAL_LINKS.Facebook} target="_blank" ><FaFacebookF size='20' /></Link>
-        <Link href={SOCIAL_LINKS.Instagram} target="_blank" ><FaInstagram size='20' /></Link>
-        <Link href={SOCIAL_LINKS.LinkedIn} target="_blank" ><FaLinkedinIn size='20' /></Link>
-      </Flex>
-      <Flex color='app.white' gap='5' align="center" >
-        <Flex align="center" gap='2'>
-          <FaPhoneAlt size='19' />
-          <Text >{CONTACT_DETAILS.Phone}</Text>
-        </Flex>
-        <Flex align="center" gap='2'>
-          <IoMail size='22' />
-          <Text  >{CONTACT_DETAILS.Email}</Text>
-        </Flex>
-      </Flex>
-    </Flex>
+    <Box>
 
+      <Flex p="2" bgColor='app.primary' justify='space-between'>
+        <Flex align='center' color='app.white' gap='20px' mt='2px'>
+          <Link href={SOCIAL_LINKS.Facebook} target="_blank" ><FaFacebookF size='20' /></Link>
+          <Link href={SOCIAL_LINKS.Instagram} target="_blank" ><FaInstagram size='20' /></Link>
+          <Link href={SOCIAL_LINKS.LinkedIn} target="_blank" ><FaLinkedinIn size='20' /></Link>
+        </Flex>
+        <Flex color='app.white' gap='3' align="center" >
+          <Flex align="center" gap='2'>
+            <FaPhoneAlt size='19' />
+            <Text >{CONTACT_DETAILS.Phone}</Text>
+          </Flex>
+          <Box h='5' borderLeft='2px' borderColor='app.white' borderStyle='dashed' />
+          <Flex align="center" gap='2'>
+            <IoMail size='22' />
+            <Text  >{CONTACT_DETAILS.Email}</Text>
+          </Flex>
+        </Flex>
+      </Flex>
+
+      <Flex position='absolute' w='full' p='3' justify='space-between' fontFamily='jua'>
+        <Flex align='center' gap='2'>
+          <Image src="/logo.png" alt="logo" width="65px" />
+          <Heading fontSize='3xl' color='app.primary' >Kangaroo Care AI</Heading>
+        </Flex>
+        <Flex align='center' gap='5' >
+          {QUICK_LINKS.map((link, idx) => {
+            return <Text key={idx} fontSize='xl' color='app.primary' ><Link href={link.path}>{link.title}</Link></Text>
+          })}
+        </Flex>
+      </Flex>
+
+    </Box>
   )
 }
 
@@ -88,11 +104,9 @@ function Footer() {
         <Box flex='1'>
           <Heading fontSize='3xl' color="app.primary" mb='4' >Quick Links</Heading>
           <Box display="flex" flexDirection="column" gap="2">
-            <Text >Home</Text>
-            <Text >About</Text>
-            <Text >Products</Text>
-            <Text >Contact Us</Text>
-            <Text >Career</Text>
+            {QUICK_LINKS.map((link, idx) => {
+              return <Text key={idx} ><Link href={link.path}>{link.title}</Link></Text>
+            })}
           </Box>
         </Box>
 

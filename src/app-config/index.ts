@@ -33,3 +33,7 @@ export const CONTACT_DETAILS = {
 export const PAGES = {
     Home, About, Products, Contact, Career
 }
+
+export const QUICK_LINKS = [
+    PAGES.Home, PAGES.About, PAGES.Products, PAGES.Contact, PAGES.Career
+]
