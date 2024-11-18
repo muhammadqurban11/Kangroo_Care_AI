@@ -69,68 +69,7 @@ function Home() {
                 </Text>
             </Box>
 
-            <Box width="100%" bg="#F4F4F4" padding="10px" minHeight="50vh" >
-                <Box>
-                    <Image src='/image 4.png' alt="Footer_Image" width="300px" marginLeft='70px' mb='10px' />
-                    <Box display='flex' flexDirection="column" gap='30px' justifyContent='start' marginTop='20px'  >
-                        <Box marginLeft='60px' gap='10px' >
-                            <ImLocation fontSize="25px" />
-                            <Text ml="40px" fontSize="16px" marginTop="-28px" color="#555">
-                                4B, Block-2 PECHS, Karachi, Pakistan
-                            </Text>
-                        </Box>
-                        <Box marginLeft='60px' gap='10px'>
-                            <BsFillTelephoneFill fontSize='20' />
-                            <Text ml="40px" fontSize="16px" marginTop="-22px" color="#555">
-                                +923322842727
-                            </Text>
-                        </Box>
-                        <Box marginLeft='60px' gap='10px'>
-                            <GrMail fontSize='20' />
-                            <Text ml="40px" fontSize="16px" marginTop="-22px" color="#424040">
-                                +mohammadlaeeq91@gmail.com
-                            </Text>
-                        </Box>
-                    </Box>
-                </Box>
-                <Box>
-                    <Box marginLeft="450px" left="90%" marginTop="-16%" >
-                        <Text fontFamily="Jua" color="app.primary" fontSize="25px">
-                            Quick Links
-                        </Text>
-                    </Box>
-                    <Box marginLeft="450px" top="25%" display="flex" flexDirection="column" gap="16px">
-                        <Text fontSize="18px">Home</Text>
-                        <Text fontSize="18px">About</Text>
-                        <Text fontSize="18px">Products</Text>
-                        <Text fontSize="18px">Contact Us</Text>
-                        <Text fontSize="18px">Career</Text>
-                    </Box>
-                </Box>
-                <Box>
-                    <Box marginLeft="700px" marginTop="-18%" >
-                        <Text fontFamily="Jua" color="app.primary" fontSize="25px">
-                            Our Mission
-                        </Text>
-                    </Box>
-                    <Box
-                        // marginLeft="700px" marginRight='80px' top='25%'
-                        marginLeft={{ base: "0", md: "700px" }}
-                        marginRight={{ base: "0", md: "80px" }}
-                        top={{ base: "10%", md: "25%" }}
-                        px={{ base: "15px", md: "0" }}
-                    >
-                        <Text>
-                            At Kangaroo Care AI, our mission is to revolutionize neonatal care with AI-powered incubators that prioritize warmth, safety, and bonding. We combine advanced technology with compassionate design to support healthcare professionals and families, ensuring optimal outcomes for infants in their most critical early moments.
-                        </Text>
-                        <Text display='flex' justifyContent='start' gap='16px' mt='30px' >
-                            <RiFacebookFill fontSize="25px" />
-                            <IoLogoInstagram fontSize="25px" />
-                            <FaLinkedinIn fontSize="25px" />
-                        </Text>
-                    </Box>
-                </Box>
-            </Box>
+           
 
 
 

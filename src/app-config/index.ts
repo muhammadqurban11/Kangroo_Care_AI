@@ -1,24 +1,35 @@
 const Home = { title: "Home", path: "/" };
-const About = { title: "About Us", path: "/about-us" };
+const About = { title: "About Us", path: "/about" };
 const Contact = { title: "Contact Us", path: "/contact-us" };
-const Products = { title: "News", path: "/news" };
+const Products = { title: "Products", path: "/products" };
+const Career = { title: "Career", path: "/career" };
 
 
 
 
-export const DOMAIN_NAME = "https://www.kangroo-care-ai.com/";
+export const DOMAIN_NAME = "kangaroocareai.com";
+export const WEBSITE_LINK = "https://kangaroocareai.com";
 const COUNTRY = "Pakistan";
 export const CITY = `Karachi`;
 export const REGION = "Karachi Sindh";
-export const NAME = "Kangroo-care-ai";
-export const FULL_NAME = `${NAME} ${CITY} (${REGION})`;
-export const SITE_TITLE = `${NAME} |  ${CITY} (${REGION})`;
+export const SITE_TITLE = "Kangaroo Care AI";
 
 export const SITE_DESCRIPTION = `
- Welcome to the Kangroo Care Ai ${NAME} ${COUNTRY} ${CITY} (${REGION})
+ Welcome to${SITE_TITLE}
 `;
 
+export const SOCIAL_LINKS = {
+    Facebook: "https://www.facebook.com/kangaroocareai/",
+    Instagram: "https://www.instagram.com/kangaroocareai/",
+    LinkedIn: "https://www.linkedin.com/company/kangaroocareai/about/",
+}
+
+export const CONTACT_DETAILS = {
+    Address: '4B, Block-2 PECHS, Karachi, Pakistan',
+    Phone: "+923322842727",
+    Email: 'mohammadlaeeq91@gmail.com'
+}
 
 export const PAGES = {
-    Home, About, Products, Contact
+    Home, About, Products, Contact, Career
 }
