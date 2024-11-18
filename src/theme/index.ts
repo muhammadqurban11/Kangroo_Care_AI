@@ -10,6 +10,9 @@ const colors = {
         grey3: "#444343",
         primary: "#286AA3",// blue
         secondary: "#F4F4F4", // half-white
+        white: "#FBEFDD",
+
+
     },
 
 
