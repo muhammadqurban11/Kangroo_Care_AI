@@ -33,6 +33,15 @@ const components = {
 }
 
 
+export const LINKS = {
+    facebook: 'https://www.facebook.com/kangaroocareai/',
+    instagram: 'https://www.instagram.com/kangaroocareai/',
+    linkedIn: 'https://www.linkedin.com/company/kangaroocareai/about/'
+}
+
+
+
+
 // https://chakra-ui.com/docs/styled-system/text-and-layer-styles
 const textStyles: { [k: string]: TypographyProps } = {
 
