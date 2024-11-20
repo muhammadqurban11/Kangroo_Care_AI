@@ -12,7 +12,6 @@ const colors = {
         secondary: "#F4F4F4", // half-white
         white: "#FBEFDD",
 
-
     },
 
 

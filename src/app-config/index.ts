@@ -1,8 +1,8 @@
 
 
 const Home = { title: "Home", path: "/" };
-const About = { title: "About Us", path: "/about_us" };
-const Contact = { title: "Contact Us", path: "/contact_us" };
+const About = { title: "About Us", path: "/about-us" };
+const Contact = { title: "Contact Us", path: "/contact-us" };
 const Products = { title: "Products", path: "/products" };
 const Career = { title: "Career", path: "/career" }
 

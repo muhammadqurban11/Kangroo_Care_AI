@@ -1,9 +1,11 @@
 import { Box } from "@chakra-ui/react"
 
-export const career = () => {
+export const Career = () => {
     return (
         <Box>
             This is Career Pages
         </Box>
     )
 }
+
+export default Career;
