@@ -80,9 +80,7 @@ function Header() {
           })}
         </Flex>
       </Flex>
-
     </Box>
-
   )
 }
 
@@ -132,11 +130,6 @@ function Footer() {
         </Box>
       </Flex>
 
-
-
-
-
-
       < Flex arail-ablel="footer-bottom" p='4px' justify='space-between' bgColor='app.grey3' >
         <Text color='app.white'>Copyright &copy; {new Date().getFullYear()} kangaroocareai.com All Rights Reserved</Text>
         <Flex align='center' gap='2'>
@@ -145,7 +138,6 @@ function Footer() {
         </Flex>
       </ Flex>
     </Box >
-
   )
 }
 

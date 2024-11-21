@@ -12,9 +12,8 @@ const colors = {
         secondary: "#F4F4F4", // half-white
         white: "#FBEFDD",
 
+
     },
-
-
 }
 
 const components = {
@@ -27,8 +26,6 @@ const components = {
     // Input: {
     //     baseStyle: { field: { fontFamily: 'sans-serif' } }
     // }
-
-
 }
 
 
@@ -69,8 +66,6 @@ const config: Partial<Theme['config']> = {
     useSystemColorMode: false,
     // disableTransitionOnChange: false, 
     initialColorMode: "light",
-
-
 }
 
 export const theme = extendTheme({

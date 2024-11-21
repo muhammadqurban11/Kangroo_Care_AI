@@ -1,12 +1,9 @@
 
-
 const Home = { title: "Home", path: "/" };
 const About = { title: "About Us", path: "/about-us" };
 const Contact = { title: "Contact Us", path: "/contact-us" };
 const Products = { title: "Products", path: "/products" };
 const Career = { title: "Career", path: "/career" }
-
-
 
 
 export const DOMAIN_NAME = "https://www.kangaroo-care-ai.com/";
@@ -16,7 +13,6 @@ export const REGION = "Karachi Sindh";
 export const NAME = "kangarooCare-AI";
 export const FULL_NAME = `${NAME} ${CITY} (${REGION})`;
 export const SITE_TITLE = `${NAME} |  ${CITY} (${REGION})`;
-
 export const SITE_DESCRIPTION = `
  Welcome to the  ${NAME} ${COUNTRY} ${CITY} (${REGION})
 `;
