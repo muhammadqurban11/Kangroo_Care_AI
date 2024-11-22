@@ -1,38 +1,44 @@
 
-
-
+import { PAGES } from '@/app-config'
 import { Box, Button, Flex, Heading, Image, Link, Text } from '@chakra-ui/react'
-
-import React from 'react'
 
 export default function Products() {
     return (
         <Box aria-label='product-cover-page'>
-            <Box>
-                <Image src='/assests/product/baby-wallpaper.jpg' alt='product-Image' w='1380px' h='600px' />
+            <Box bgColor="black" opacity='6'>
+                <Image src='/assets/product/baby-wallpaper.jpg' alt='product-Image' w='1380px' h='600px' />
                 <Flex direction='column' pos='absolute' top="60" left="20" maxW="800px" gap='4'>
                     <Heading color='app.primary'>Our Products </Heading>
                     <Text textAlign='justify' w='40%'>
-                        Our baby products are designed with care and comfort in mind, ensuring your little one stays safe and happy. Made from soft, high-quality materials, they provide the perfect blend of practicality and style. Trust us for all your baby's needs, from clothing to accessories.
+                        Our baby products are designed with care and comfort in mind, ensuring your little one stays safe and happy. Made from soft, high-quality materials, they provide the perfect blend of practicality and style. Trust us for all your babies needs, from clothing to accessories.
                     </Text>
-                    <Button w='fit-content' colorScheme='blue' ml='8' mt='6' as={Link} href='Home'>
+                    <Button w='fit-content' colorScheme='blue' ml='8' mt='6' as={Link} href={PAGES.Products.path}>
                         Get a Quote
                     </Button>
                 </Flex>
             </Box>
             <Box aria-label='product-cards' ml='20' mt='20' mb='20'>
-                <Flex gap='4'>
-                    <Image src='/assests/product/incubator.png' w='320px' border='3px Solid white' borderRadius='12' />
-                    <Text w='full' p='4' m='5' mt='4'   >
-                        <Heading color='app.primary' textAlign='center' mb='4'> PAKISTAN'S FIRST AI INCUBATOR</Heading>
+                <Flex direction='column' gap='4' align='center'>
+                    <Image src='/assets/product/incubator.png' alt="incubator-image" w='600px' h='300px' border='3px Solid white' borderRadius='12' />
+                    <Heading color='app.primary' mb='4'> PAKISTAN FIRST AI INCUBATOR</Heading>
+                    <Text textAlign='left' mr='8'>
                         Kangaroo Care AI, Pakistan’s first AI-powered incubator manufacturer, marking a significant step forward for the local tech ecosystem.
-                        Specializing in advanced infant incubators, Kangaroo Care AI’s flagship product is a desktop application that allows medical professionals to monitor and control incubators in real time. The company’s AI-powered electric incubators ensure seamless operation and monitoring, offering critical support for newborns, including those in neonatal intensive care units (NICUs).
+                        Specializing in advanced infant incubators, Kangaroo Care AI’s flagship product is a desktop application that allows medical professionals to monitor and control incubators in real time. The company’s AI-powered electric incubators ensure seamless operation and monitoring, offering critical support for newborns, including those in neonatal intensive care units.
                         With intuitive controls and real-time monitoring features, these incubators leverage cutting-edge artificial intelligence to enhance neonatal care. The startup is not only making life-saving technology accessible but also improving healthcare outcomes for premature and critically ill newborns.
                     </Text>
                 </Flex>
-                <Heading>MANUCTURE</Heading>
+                <br />
+                <Box aria-label='Manufacture Description'>
+                    <Flex gap='4' direction='column' align='center'>
+                        <Image src='/assets/product/incubator_infant.jpg' alt="incubator-image" w='320px' h='300px' border='3px Solid white' borderRadius='12' />
+                        <Heading color='app.primary' textAlign='center' mb='4' >MANUFACTURE DESCRIPTION</Heading>
+                        <Text w='full' mr='8'>
+                            The manufacturing process of an AI incubator begins with designing and prototyping, focusing on features like temperature control and AI integration. Key components, including sensors, processors, and medical-grade materials, are sourced and assembled. AI algorithms are then programmed to monitor vital signs and adjust conditions. After integration, the system undergoes rigorous testing for accuracy and reliability. Finally, the incubator is calibrated, undergoes quality control checks, and is packaged for distribution to healthcare providers.
+                        </Text>
+                    </Flex>
+                </Box>
             </Box>
-        </Box>
+        </Box >
 
     )
 }

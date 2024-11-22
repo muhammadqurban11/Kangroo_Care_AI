@@ -3,7 +3,7 @@ const Home = { title: "Home", path: "/" };
 const About = { title: "About Us", path: "/about-us" };
 const Contact = { title: "Contact Us", path: "/contact-us" };
 const Products = { title: "Products", path: "/products" };
-const Career = { title: "Career", path: "/career" }
+const Career = { title: "Team", path: "/team" }
 
 
 export const DOMAIN_NAME = "https://www.kangaroo-care-ai.com/";

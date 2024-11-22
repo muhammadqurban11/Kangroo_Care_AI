@@ -8,7 +8,7 @@ import { SlStar } from 'react-icons/sl';
 function Page() {
   return (
     <Box>
-      <Box py={{ lg: '40', xl: '52' }} bgImg={`url("/assests/home/cover-img.png")`} bgSize='cover' bgPos='bottom' aria-label='cover-section' >
+      <Box py={{ lg: '40', xl: '52' }} bgImg={`url("/assets/home/cover-img.png")`} bgSize='cover' bgPos='bottom' aria-label='cover-section' >
         <Box maxW='1280px' mx='auto'>
           <Box maxW='690px' pl='5' >
             <Heading mb='5' fontSize='5xl' as='h1' fontFamily='jua' color='app.primary' >Innovating Neonatal Care with AI-Powered Incubators</Heading>
@@ -28,7 +28,7 @@ function Page() {
             <Text fontSize="xl" color="gray.700">Choose Kangaroo Care AI for innovative, AI-powered infant care solutions designed with precision and compassion. Our advanced incubators prioritize infant safety, warmth, and health, integrating cutting-edge technology to support healthcare professionals and parents alike. With a commitment to excellence, reliability, and superior outcomes, we empower neonatal care teams to provide the best start for every newborn. Trust us for pioneering solutions that blend technology with heartfelt care.</Text>
           </Box>
           <Box flex="1" minWidth="320px" mb='10' px='10'>
-            <Image src="/assests/home/product-img.png" alt="products-image" w="full" h="full" />
+            <Image src="/assets/home/product-img.png" alt="products-image" w="full" h="full" />
           </Box>
           <Box pos="absolute" zIndex="-1" right='0' left='0' bottom='0' top='0' color="gray.200">
             <Box pos="absolute" transform="rotate(64deg)" right='1' bottom='-20'>
@@ -45,7 +45,7 @@ function Page() {
       </Box >
 
       <Box position='relative' mb='24'>
-        <Image src='/assests/home/team-img.png' alt='employee_group' objectFit="cover" width="100%" height="100%" />
+        <Image src='/assets/home/team-img.png' alt='employee_group' objectFit="cover" width="100%" height="100%" />
         <Flex px="5" py="10" justify="space-between" align="center" fontWeight="bold" color="white" position="absolute" top="0" left="0" width="100%" height="100%">
           <VStack pl='8' >
             <Box fontSize='8xl'>100+</Box>
