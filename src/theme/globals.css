@@ -25,3 +25,64 @@ body {
     text-wrap: balance;
   }
 }
+
+
+/* @keyframes slideLeftToRight {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  animation: slideLeftToRight 5s ease forwards;
+} */
+
+@keyframes slideLeftToRight {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  width: 300%;
+
+  height: 100%;
+  animation: slideLeftToRight 2s ease forwards;
+}
+
+.slider>div {
+  width: 100%;
+  height: 100%;
+}
+
+/* img { */
+/* object-fit: cover; */
+/* width: 100%;
+  height: 100%;
+} */
