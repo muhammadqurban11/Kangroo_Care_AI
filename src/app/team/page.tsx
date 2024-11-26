@@ -1,11 +1,9 @@
 'use client'
-
-
 import { Box, Image, Heading, Text, Flex, VStack } from "@chakra-ui/react"
 
 export const Team = () => {
     return (
-        <Box bgColor='app.secondary' p='10' >
+        <Box aria-label='Cover Page' bgColor='app.secondary' p='10' >
             <Heading textAlign='center' color='app.primary' mb='10' mt='20'>Meet Our Professional Team</Heading>
             <Box className="slider-container">
                 <Box className="slider" w='100%' h='100%'>
@@ -32,14 +30,14 @@ export const Team = () => {
                     We bring together a diverse group of innovators, researchers, and engineers passionate about shaping the future of artificial intelligence. Our team works tirelessly to foster the growth of AI startups and entrepreneurs by providing cutting-edge resources, mentorship, and a collaborative environment.
                 </Text>
             </Box>
-            <Box>
-                <Flex gap='60'>
-                    <Image src='/assets/team/ceo_img.png' alt='ceo_img.png' />
-                    <Image src='/assets/team/team_img3.png' alt='ceo_img.png' w='20%' />
+            <Box className='hovering' display="flex" flexDirection="column" alignItems="center" justifyContent="center" >
+                <Flex gap='60' justifyContent="center" alignItems="center" >
+                    <Image src='/assets/team/team_member.png' alt='ceo_img.png' w='30%' h='30%' />
+                    <Image src='/assets/team/team_img_05.png' alt='ceo_img.png' w='30%' h='30%' />
                 </Flex>
-                <Flex gap='60'>
-                    <Image src='/assets/team/team-img.png' alt='ceo_img.png' w='25%' h='25%' />
-                    <Image src='/assets/team/team-img.png' alt='ceo_img.png' w='25%' h='25%' />
+                <Flex gap='60' justifyContent="center" alignItems="center" >
+                    <Image src='/assets/team/team-img.png' alt='ceo_img.png' w='30%' h='30%' />
+                    <Image src='/assets/team/team_img3.png' alt='ceo_img.png' w='25%' h='25%' />
                 </Flex>
             </Box>
         </Box>
