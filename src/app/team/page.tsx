@@ -8,7 +8,7 @@ export const Team = () => {
             <Box className="slider-container">
                 <Box className="slider" w='100%' h='100%'>
                     <Box>
-                        <Image src="/assets/team/team_01.jpg" alt="Image 1" objectFit="cover" w='100%' h='100%' />
+                        <Image src="/assets/team/group-img.png" alt="Image 1" objectFit="cover" w='100%' h='100%' />
                     </Box>
                 </Box>
             </Box>
@@ -32,12 +32,12 @@ export const Team = () => {
             </Box>
             <Box className='hovering' display="flex" flexDirection="column" alignItems="center" justifyContent="center" >
                 <Flex gap='60' justifyContent="center" alignItems="center" >
-                    <Image src='/assets/team/team_member.png' alt='ceo_img.png' w='30%' h='30%' />
+                    <Image src='/assets/team/team_img3.png' alt='ceo_img.png' w='25%' h='25%' />
                     <Image src='/assets/team/team_img_05.png' alt='ceo_img.png' w='30%' h='30%' />
                 </Flex>
                 <Flex gap='60' justifyContent="center" alignItems="center" >
-                    <Image src='/assets/team/team-img.png' alt='ceo_img.png' w='30%' h='30%' />
                     <Image src='/assets/team/team_img3.png' alt='ceo_img.png' w='25%' h='25%' />
+                    <Image src='/assets/team/team_member.png' alt='ceo_img.png' w='30%' h='30%' />
                 </Flex>
             </Box>
         </Box>
