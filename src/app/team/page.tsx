@@ -30,16 +30,21 @@ export const Team = () => {
                     We bring together a diverse group of innovators, researchers, and engineers passionate about shaping the future of artificial intelligence. Our team works tirelessly to foster the growth of AI startups and entrepreneurs by providing cutting-edge resources, mentorship, and a collaborative environment.
                 </Text>
             </Box>
-            <Box className='hovering' display="flex" flexDirection="column" alignItems="center" justifyContent="center" >
-                <Flex gap='60' justifyContent="center" alignItems="center" >
-                    <Image src='/assets/team/team_img3.png' alt='ceo_img.png' w='25%' h='25%' />
-                    <Image src='/assets/team/team_img_05.png' alt='ceo_img.png' w='30%' h='30%' />
+            {/* <Box>
+                <Flex>
+                    <Image src='/assets/team/team_img3.png' alt='ceo_img.png' className='hover-image' w='40%' h="20%" />
+                    <Text className="hover-text" color='maroon'>Hovering Effect</Text>
+                    <Image src='/assets/team/team_img_05.png' alt='ceo_img.png' className="hover-image2" />
+                    <Text className="hover-text2">Text Hovering effect2</Text>
                 </Flex>
-                <Flex gap='60' justifyContent="center" alignItems="center" >
-                    <Image src='/assets/team/team_img3.png' alt='ceo_img.png' w='25%' h='25%' />
-                    <Image src='/assets/team/team_member.png' alt='ceo_img.png' w='30%' h='30%' />
+                <Flex>
+                    <Image src='/assets/team/team_img3.png' alt='ceo_img.png' className="hover-image3" />
+                    <Text className="hover-text3">Text Hovering effect3</Text>
+                    <Image src='/assets/team/team_member.png' alt='ceo_img.png' className="hover-image4" />
+                    <Text className="hover-text4">Text Hovering effect4</Text>
                 </Flex>
-            </Box>
+            </Box> */}
+
         </Box>
     )
 }

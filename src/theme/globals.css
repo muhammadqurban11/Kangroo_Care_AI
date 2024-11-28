@@ -57,32 +57,27 @@ body {
 
 .hover-container {
   position: relative;
-  display: inline-block;
+  display: block;
+
 }
 
-.hover-image {
-  width: 100%;
-  height: auto;
+.image-hover {
+  /* width: 100%; */
+  /* height: auto; */
   transition: opacity 0.3s ease-in-out;
+
 }
 
 .hover-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 20px;
-  color: white;
+  color: rgba(121, 198, 217, 0.299);
   opacity: 0;
   transition: opacity 0.3s ease-out;
 }
 
-.hover-container:hover .hover-image {
-  opacity: 0.5;
-  /* Make image semi-transparent on hover */
+.hover-container:hover .image-hover:hover {
+  opacity: 0.90;
 }
 
 .hover-container:hover .hover-text {
   opacity: 1;
-  /* Show text when hovering over the image */
 }
