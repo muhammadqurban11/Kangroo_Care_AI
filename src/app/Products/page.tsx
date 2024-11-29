@@ -18,10 +18,10 @@ export default function Products() {
                 </Flex>
             </Box>
             <Box aria-label='product-cards' ml='20' mt='20' mb='20'>
-                <Flex direction='column' gap='4' align='center'>
-                    <Image src='/assets/product/incubator.png' alt="incubator-image" w='600px' h='300px' border='3px Solid white' borderRadius='12' />
-                    <Heading color='app.primary' mb='4'> PAKISTAN FIRST AI INCUBATOR</Heading>
-                    <Text textAlign='left' mr='8'>
+                <Heading color='app.primary' mb='4' textAlign='center' > PAKISTAN FIRST AI INCUBATOR</Heading>
+                <Flex gap='10' align='center'>
+                    <Image src='/assets/product/incubator.png' alt="incubator-image" w='450px' h='250px' border='3px Solid white' borderRadius='12' />
+                    <Text textAlign="justify" mr='8'>
                         Kangaroo Care AI, Pakistan’s first AI-powered incubator manufacturer, marking a significant step forward for the local tech ecosystem.
                         Specializing in advanced infant incubators, Kangaroo Care AI’s flagship product is a desktop application that allows medical professionals to monitor and control incubators in real time. The company’s AI-powered electric incubators ensure seamless operation and monitoring, offering critical support for newborns, including those in neonatal intensive care units.
                         With intuitive controls and real-time monitoring features, these incubators leverage cutting-edge artificial intelligence to enhance neonatal care. The startup is not only making life-saving technology accessible but also improving healthcare outcomes for premature and critically ill newborns.
@@ -29,10 +29,10 @@ export default function Products() {
                 </Flex>
                 <br />
                 <Box aria-label='Manufacture Description'>
-                    <Flex gap='4' direction='column' align='center'>
-                        <Image src='/assets/product/incubator_infant.jpg' alt="incubator-image" w='320px' h='300px' border='3px Solid white' borderRadius='12' />
-                        <Heading color='app.primary' textAlign='center' mb='4' >MANUFACTURE DESCRIPTION</Heading>
-                        <Text w='full' mr='8'>
+                    <Heading color='app.primary' textAlign='center' mb='4' >MANUFACTURE DESCRIPTION</Heading>
+                    <Flex gap='4' align='center'>
+                        <Image src='/assets/product/incubator_infant.jpg' alt="incubator-image" w='450px' h='250px' border='3px Solid white' borderRadius='12' />
+                        <Text textAlign='justify' mr='8'>
                             The manufacturing process of an AI incubator begins with designing and prototyping, focusing on features like temperature control and AI integration. Key components, including sensors, processors, and medical-grade materials, are sourced and assembled. AI algorithms are then programmed to monitor vital signs and adjust conditions. After integration, the system undergoes rigorous testing for accuracy and reliability. Finally, the incubator is calibrated, undergoes quality control checks, and is packaged for distribution to healthcare providers.
                         </Text>
                     </Flex>
