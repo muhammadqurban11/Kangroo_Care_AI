@@ -61,12 +61,6 @@ body {
 
 }
 
-.image-hover {
-  /* width: 100%; */
-  /* height: auto; */
-  transition: opacity 0.3s ease-in-out;
-
-}
 
 .hover-text {
   color: rgba(121, 198, 217, 0.299);

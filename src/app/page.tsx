@@ -21,8 +21,9 @@ function Page() {
       </Box>
 
       <Box aria-label="Why-Choose-Us-Section" pos="relative" mt='4'>
-        <Heading justifySelf="center" color="app.primary"> Why Choose Us? </Heading>
-
+        <Box display="flex" justifyContent="center" alignItems="center">
+          <Heading color="app.primary">Why Choose Us?</Heading>
+        </Box>
         <Flex pos="relative" justify="space-between" align="center">
           <Box px="10" flex="1" minWidth="320px">
             <Text fontSize="xl" color="gray.700">Choose Kangaroo Care AI for innovative, AI-powered infant care solutions designed with precision and compassion. Our advanced incubators prioritize infant safety, warmth, and health, integrating cutting-edge technology to support healthcare professionals and parents alike. With a commitment to excellence, reliability, and superior outcomes, we empower neonatal care teams to provide the best start for every newborn. Trust us for pioneering solutions that blend technology with heartfelt care.</Text>

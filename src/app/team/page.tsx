@@ -17,11 +17,11 @@ export const Team = () => {
             <br />
             <br />
             <Flex justify='space-between'>
-                <VStack align='start' spacing='5' m='40'>
+                <VStack align='start' spacing='5' m='30' mt='28'>
                     <Heading textAlign='center' color='app.primary'>CEO / Co Founder of KangarooCareAi</Heading>
                     <Text>The First Pakistani Manufacturer Infant Incubator, where we are dedicated to improving the lives of infants through innovative technology. As a manufacturer of state-of-the-art infant incubators, we understand the critical nature of neonatal care. Thats  why we have developed Kangaroo Care AI, a revolutionary desktop application that allows medical staff to control and monitor our incubators in real-time, ensuring the best possible care for our tiniest patients.</Text>
                 </VStack>
-                <Image src='/assets/team/ceo_img.png' alt='ceo_img.png' w='60%' h='60%' />
+                <Image src='/assets/team/ceo_img.png' alt='ceo_img.png'/>
             </Flex>
             <Image src='/assets/team/team_02.jpg' alt='group-image' w='100%' h='100%' />
             <Box p='10' mr='20' ml='20' >

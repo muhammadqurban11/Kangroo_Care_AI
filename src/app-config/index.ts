@@ -7,15 +7,15 @@ const Career = { title: "Team", path: "/team" }
 
 
 export const DOMAIN_NAME = "https://www.kangaroo-care-ai.com/";
-const COUNTRY = "Pakistan";
-export const CITY = `Karachi`;
-export const REGION = "Karachi Sindh";
-export const NAME = "kangarooCare-AI";
-export const FULL_NAME = `${NAME} ${CITY} (${REGION})`;
-export const SITE_TITLE = `${NAME} |  ${CITY} (${REGION})`;
-export const SITE_DESCRIPTION = `
- Welcome to the  ${NAME} ${COUNTRY} ${CITY} (${REGION})
-`;
+ const COUNTRY = "Pakistan";
+ export const CITY = `Karachi`;
+ export const REGION = "Karachi Sindh";
+ export const NAME = "Kangaroo-Care-AI";
+ export const FULL_NAME = `${NAME} ${CITY} (${REGION})`;
+ export const SITE_TITLE = `${NAME} |  ${CITY} (${REGION})`;
+ export const SITE_DESCRIPTION = `
+  Welcome to the  ${NAME} ${COUNTRY} ${CITY} (${REGION})`
+
 
 export const SOCIAL_LINKS = {
     Facebook: "https://www.facebook.com/kangaroocareai/",
