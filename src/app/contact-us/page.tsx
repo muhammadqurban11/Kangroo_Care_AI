@@ -1,9 +1,45 @@
-import { Box, Button, Flex, FormControl, FormLabel, Heading, Input, Text, VStack } from "@chakra-ui/react"
-import Image from "next/image";
+'use client'
 
+import sendContactFrom from "../lib/api";
+
+import { Box, Button, Flex, FormControl, FormErrorMessage, FormLabel, Heading, Input, Text, VStack } from "@chakra-ui/react"
+import Image from "next/image";
+import { useState } from "react";
+
+
+
+const initialValues = { name: "", email: "", phone: "", address: "", message: "" }
+const initialState = { values: initialValues, isLoading:false }
 
 
 const Contact = () => {
+
+    const [state, setState] = useState(initialState);
+
+    const { values, isLoading } = state;
+
+    const handleChange = ({ target }: React.ChangeEvent<HTMLInputElement>) => {
+        setState((prev) => ({
+            ...prev,
+            values: {
+                ...prev.values,
+                [target.name]: target.value,
+            },
+
+        }))
+        // console.log(target.value)
+    }
+
+    const onSubmit = async () => {(
+        setState((prev) => ({
+            ...prev,
+            isLoading: true,
+        })),
+        await sendContactFrom (values)
+    )}
+
+
+
     return (
         <Box aria-label='cover page'  >
             <Box bgColor='app.grey1'>
@@ -14,32 +50,34 @@ const Contact = () => {
                     <Heading textAlign='center' color='app.primary'>Contact Us</Heading>
                 </VStack>
             </Flex>
-            <Box aria-label='contact-us Form' justifyItems='center' mt='20' mb='20' >
+            <Box aria-label='contact-us Form' mx='auto' my='20' mt='20' mb='20' maxW="400px"  >
                 <VStack top="42%" left="38%" backdropFilter="blur(8px)" bgColor="rgba(194, 190, 190, 0.7)" borderRadius="md" p="6" boxShadow="lg" zIndex="10" >
-                    <FormControl isRequired>
+                    <FormControl>
                         <Heading mb="4" color="app.primary" textAlign="center">Keep in Touch !!!</Heading>
                         <FormLabel htmlFor="name">
                             Name
-                            <Input type="text" placeholder="Enter your name" focusBorderColor="app.primary" borderColor="app.grey2" _hover={{ borderColor: "app.primary" }} />
+                            <Input type="text" name='name' value={values.name} onChange={handleChange} errorBorderColor="red.400"placeholder="Enter your name" focusBorderColor="app.primary" borderColor="app.grey2" _hover={{ borderColor: "app.primary" }} />
+                            {/* <FormErrorMessage>Required</FormErrorMessage>     */}
                         </FormLabel>
                         <FormLabel htmlFor="email">
                             Email
-                            <Input type="email" placeholder="Enter your email" focusBorderColor="app.primary" borderColor="app.grey2" _hover={{ borderColor: "app.primary" }} />
+                            <Input type="email" name='email' value={values.email}onChange={handleChange}  placeholder="Enter your email" focusBorderColor="app.primary" borderColor="app.grey2" _hover={{ borderColor: "app.primary" }} />
                         </FormLabel>
                         <FormLabel htmlFor="phone">
                             Phone
-                            <Input type="phone" placeholder="Enter your phone number" focusBorderColor="app.primary" borderColor="app.grey2" _hover={{ borderColor: "app.primary" }} />
+                            <Input type="phone" name='phone' value={values.phone} onChange={handleChange} placeholder="Enter your phone number" focusBorderColor="app.primary" borderColor="app.grey2" _hover={{ borderColor: "app.primary" }} />
                         </FormLabel>
                         <FormLabel htmlFor="address">
                             Address
-                            <Input type="address" placeholder="Enter your address" focusBorderColor="app.primary" borderColor="app.grey2" _hover={{ borderColor: "app.primary" }} />
+                            <Input type="address" name='address' value={values.address} onChange={handleChange} placeholder="Enter your address" focusBorderColor="app.primary" borderColor="app.grey2" _hover={{ borderColor: "app.primary" }} />
                         </FormLabel>
                         <FormLabel htmlFor="message">
                             Message
-                            <Input type="message" placeholder="Enter your message" focusBorderColor="app.primary" borderColor="app.grey2" _hover={{ borderColor: "app.primary" }} />
+                            <Input type="message" name='message' value={values.message} onChange={handleChange} placeholder="Enter your message" focusBorderColor="app.primary" borderColor="app.grey2" _hover={{ borderColor: "app.primary" }} />
                         </FormLabel>
+                        <FormErrorMessage>Required</FormErrorMessage>
                     </FormControl>
-                    <Button colorScheme="blue" type="submit" _hover={{ bg: "app.primary", color: "white" }} borderRadius="md" boxShadow="md"> Submit</Button>
+                    <Button colorScheme="blue" onClick={onSubmit} isLoading={isLoading}  _hover={{ bg: "app.primary", color: "white" }} borderRadius="md" boxShadow="md"> Submit</Button>
                 </VStack>
             </Box>
         </Box >
